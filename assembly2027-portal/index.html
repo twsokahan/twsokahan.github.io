@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<script>
+const moved = {
+  "assembly2027-ops": "https://assembly2027-ops.twsokahan.org",
+  "assembly2027-portal": "https://assembly2027-portal.twsokahan.org",
+};
+const [, site, ...rest] = location.pathname.split("/");
+if (moved[site]) location.replace(moved[site] + "/" + rest.join("/") + location.search + location.hash);
+</script>
+<meta http-equiv="refresh" content="0; url=https://assembly2027-portal.twsokahan.org/">
+<title>網址搬家了</title>
+</head>
+<body>
+<p>網址搬家了：</p>
+<ul>
+<li>運營時程：<a href="https://assembly2027-ops.twsokahan.org/">assembly2027-ops.twsokahan.org</a></li>
+<li>2027 創價班總會網站：<a href="https://assembly2027-portal.twsokahan.org/">assembly2027-portal.twsokahan.org</a></li>
+</ul>
+</body>
+</html>
